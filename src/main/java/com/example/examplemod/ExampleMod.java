@@ -2,6 +2,7 @@ package com.example.examplemod;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
+import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -42,6 +43,7 @@ public class ExampleMod
     public static final RegistryObject<Item> EXAMPLE_BLOCK_ITEM = ITEMS.register("example_block", () -> new BlockItem(EXAMPLE_BLOCK.get(), new Item.Properties().tab(CreativeModeTab.TAB_BUILDING_BLOCKS)));
 
     public static final RegistryObject<Item> LIGHTSABER = ITEMS.register("lightsaber", () -> new SwordItem(Tiers.DIAMOND, 6, -2.4F, new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
+    public static final RegistryObject<Item> PENCIL = ITEMS.register("pencil", () -> new Item(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT)));
 
     public ExampleMod()
     {
